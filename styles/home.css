@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body{
+    background-color:  black;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.all{
+    text-align: center;
+}
+.unknown_box{
+    margin-top: 80px;
+}
+.header_main{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+.instructions{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+ 
+.unknown{
+    text-align: center;
+    background-color: white;
+    color: black;
+    height: 130px;
+    width: 250px;
+    font-size: 120px;
+    padding-top: 20px;
+    padding-left: 12px;
+    position: absolute;
+}
+
+.user_input{
+    width:80px;
+    height: 80px;
+    font-size: 40px;
+    background-color: black;
+    margin-top: 50px;
+    border: 10px solid white;
+    color: white;
+    display: inline-block;
+    text-align: center
+}
+
+.num_text{
+    
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.black{
+    color: black;
+}
+
+.check_button{
+    height: 60px;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 40px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.score{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.high_score{
+    margin-top: 10px;
+}
+
+.empty_box1{
+    height: 20px;
+    width:100%;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.unknown_container{
+    margin-top: 100px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
