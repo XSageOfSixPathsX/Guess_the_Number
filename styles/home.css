@@ -26,6 +26,9 @@ input[type="number"] {
     text-align: center;
     font-size: 70px;
     margin-top: 60px;
+    @media screen {
+        
+    }
 }
 
 .instructions{

@@ -13,17 +13,22 @@ function Home() {
   console.log(random);
 
   const checkHighScore=()=>{
-    console.log("hi"+attempts);
-    if(highScore==="none")
-    {
-      setHighScore(attempts+1);
-    }
-    else if(highScore>attempts)
+    
+    if(highScore==="none"||highScore>attempts)
     {
       setHighScore(attempts+1);
     }
   }
-
+  useEffect(()=>{
+    if(highScore!="none"){
+    localStorage.setItem("highscore",highScore+5);}
+  },[highScore])
+  useEffect(()=>{
+    if(localStorage.getItem("highscore")>0&&localStorage.getItem("highscore")<1000)
+    {
+      setHighScore(localStorage.getItem("highscore")-5);
+    }
+  },[])
   const handleRestart=()=>{
     setRandom(Math.floor(Math.random()*100+1));
     setMidText("Guess Again");
@@ -34,6 +39,7 @@ function Home() {
   }
   const handleClick=()=>{
     setAttempts(attempts+1);
+    console.log(random);
     if(number===random)
     {
       setBox(number);
